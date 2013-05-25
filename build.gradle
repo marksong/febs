@@ -1,0 +1,37 @@
+apply from: 'http://www.tellurianring.com/projects/gradle-plugins/gradle-templates/apply.groovy'
+
+allprojects {
+	repositories {
+        mavenCentral()
+    }
+	apply plugin: 'eclipse'
+	tasks.withType(Compile) {
+    	options.encoding = "UTF-8"
+    }
+}
+
+
+ext.compileDependencies = ['commons-lang:commons-lang:2.6',
+					'commons-beanutils:commons-beanutils:1.8.3',
+					'commons-configuration:commons-configuration:1.9',
+					'commons-collections:commons-collections:3.2.1',
+					'org.slf4j:slf4j-api:1.7.5',
+					'org.slf4j:slf4j-log4j12:1.7.5',
+					'log4j:log4j:1.2.17',
+					'org.springframework:spring-context:3.2.2.RELEASE',
+					'org.springframework:spring-orm:3.2.2.RELEASE',
+					'org.springframework:spring-test:3.2.2.RELEASE',
+					'org.hibernate:hibernate-core:4.2.1.Final',
+					'org.aspectj:aspectjrt:1.7.2',
+					'org.aspectj:aspectjweaver:1.7.2',
+					'mysql:mysql-connector-java:5.1.25'];
+ext.testCompileDependencies = ['junit:junit:4.+']
+project(':febsweb') {
+	apply plugin: 'eclipse-wtp'
+}
+project(':febsauthweb') {
+	apply plugin: 'eclipse-wtp'
+}
+project(':febsinfoweb') {
+	apply plugin: 'eclipse-wtp'
+}

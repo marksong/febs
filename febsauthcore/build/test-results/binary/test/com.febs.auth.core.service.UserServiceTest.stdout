@@ -1,0 +1,7 @@
+Hibernate: 
+    insert 
+    into
+        auth_user
+        (CREATE_TIME, CREATER, DELETE_FLAG, DELETE_TIME, DELETER, MODIFIER, MODIFY_TIME, email, nick_name, password, username, ID) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
