@@ -2,7 +2,8 @@ package com.febs.common.service;
 
 import java.io.Serializable;
 
-import org.apache.commons.lang.NotImplementedException;
+import com.febs.common.orm.PaginationSupport;
+
 
 
 
@@ -20,7 +21,7 @@ public abstract class AbstractCrudService<T, PK extends Serializable> {
 	 * @param instance
 	 */
 	public void saveOrUpdate(T instance) {
-		throw new NotImplementedException();
+		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -28,11 +29,11 @@ public abstract class AbstractCrudService<T, PK extends Serializable> {
 	 * @param instance
 	 */
 	public void delete(T instance) {
-		throw new NotImplementedException();
+		throw new UnsupportedOperationException();
 	}
 
 	public T findById(PK id) {
-		throw new NotImplementedException();
+		throw new UnsupportedOperationException();
 	}
 
 	/**
@@ -40,7 +41,15 @@ public abstract class AbstractCrudService<T, PK extends Serializable> {
 	 * @param instance
 	 */
 	public void physicalDelete(T instance) {
-		throw new NotImplementedException();
+		throw new UnsupportedOperationException();
+	}
+	
+	/**
+	 * 分页
+	 * @param page
+	 */
+	public void findPage(PaginationSupport<T> page) {
+		throw new UnsupportedOperationException();
 	}
 
 }

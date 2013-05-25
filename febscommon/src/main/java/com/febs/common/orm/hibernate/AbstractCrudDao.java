@@ -17,7 +17,7 @@ import org.hibernate.criterion.Restrictions;
 import org.hibernate.metadata.ClassMetadata;
 import org.springframework.util.Assert;
 
-import com.febs.common.bean.utils.ReflectionUtils;
+import com.febs.common.bean.utils.ReflectionUtil;
 import com.febs.common.orm.PaginationSupport;
 
 
@@ -47,7 +47,7 @@ public abstract class AbstractCrudDao<T, PK extends Serializable> extends Abstra
 	 */
 	public AbstractCrudDao() {
 		super();
-		this.entityClass = ReflectionUtils.getSuperClassGenricType(getClass());
+		this.entityClass = ReflectionUtil.getSuperClassGenricType(getClass());
 	}
 
 	/**

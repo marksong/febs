@@ -6,6 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.febs.auth.core.po.User;
 import com.febs.auth.core.po.UserDao;
+import com.febs.common.orm.PaginationSupport;
 import com.febs.common.service.AbstractCrudService;
 
 @Service
@@ -18,6 +19,11 @@ public class UserService extends AbstractCrudService<User, String> {
 	@Override
 	public void saveOrUpdate(User instance) {
 		userDao.attachDirty(instance);
+	}
+
+	@Override
+	public void findPage(PaginationSupport<User> page) {
+		userDao.findPage(page);
 	}
 
 	

@@ -1,3 +1,10 @@
 apply plugin: 'war'
+apply plugin: 'jetty'
 
 group = 'febsauthweb'
+
+dependencies {
+	compile coreDependencies, webDependencies
+	testCompile testCompileDependencies
+	compile project(':febsauthcore'), project(':febscommon')
+}

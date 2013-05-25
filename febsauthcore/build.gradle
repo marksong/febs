@@ -3,7 +3,7 @@ apply plugin: 'java'
 group = 'febsauthcore'
 
 dependencies {
-	compile compileDependencies
+	compile coreDependencies
 	testCompile testCompileDependencies
 	compile project(':febscommon')
 }

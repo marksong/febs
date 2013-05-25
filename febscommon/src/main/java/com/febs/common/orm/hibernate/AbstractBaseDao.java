@@ -1,5 +1,6 @@
 package com.febs.common.orm.hibernate;
 
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Collections;
 import java.util.List;
@@ -23,6 +24,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.Assert;
 
+import com.febs.common.bean.utils.ReflectionUtil;
 import com.febs.common.orm.PaginationSupport;
 
 
@@ -294,20 +296,9 @@ public abstract class AbstractBaseDao<T> {
 		Projection projection = impl.getProjection();
 		ResultTransformer transformer = impl.getResultTransformer();
 		// 将orderBy对象中的排序字段存入数组中
-		List<?> orderEntries = null;
-		try {
-			orderEntries = (List<?>) PropertyUtils.getProperty(criteria, "orderEntries");
-		} catch (IllegalAccessException | InvocationTargetException
-				| NoSuchMethodException e) {
-			log.error("error occurs when getting orderEntries", e);
-		}
+		List<?> orderEntries = ReflectionUtil.getProperty(impl, "orderEntries");
 		// 将排序字段设置为空
-		try {
-			PropertyUtils.setProperty(criteria, "orderEntries", Collections.emptyList());
-		} catch (IllegalAccessException | InvocationTargetException
-				| NoSuchMethodException e) {
-			log.error("error occurs when setting orderEntries empty", e);
-		}
+		ReflectionUtil.setProperty(impl, "orderEntries", Collections.emptyList());
 		// 执行Count查询
 		int count = ((Number) criteria.setProjection(Projections.rowCount()).uniqueResult()).intValue();
 		// 将取出的参数设回bean
@@ -317,12 +308,7 @@ public abstract class AbstractBaseDao<T> {
 		} else if (transformer != null) {
 			impl.setResultTransformer(transformer);
 		}
-		try {
-			PropertyUtils.setProperty(criteria, "orderEntries", orderEntries);
-		} catch (IllegalAccessException | InvocationTargetException
-				| NoSuchMethodException e) {
-			log.error("error occurs when setting orderEntries", e);
-		}
+		ReflectionUtil.setProperty(impl, "orderEntries", orderEntries);
 		return count;
 
 	}
