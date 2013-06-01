@@ -32,12 +32,6 @@ ext.testCompileDependencies = ['junit:junit:4.+',
 					'org.apache.tomcat:jsp-api:6.0.37',
 					'org.apache.tomcat:servlet-api:6.0.37']
 
-project(':febsweb') {
-	apply plugin: 'eclipse-wtp'
-}
 project(':febsauthweb') {
-	apply plugin: 'eclipse-wtp'
-}
-project(':febsinfoweb') {
 	apply plugin: 'eclipse-wtp'
 }
