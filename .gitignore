@@ -4,3 +4,11 @@
 *.jar
 *.war
 *.ear
+
+/febsauthweb/bin
+/febsauthweb/build
+
+/febsauthcore/build
+
+/febscommon/build
+/febscommon/bin
