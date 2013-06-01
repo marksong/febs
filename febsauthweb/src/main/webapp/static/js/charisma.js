@@ -18,7 +18,7 @@ $(document).ready(function(){
 	
 	function switch_theme(theme_name)
 	{
-		$('#bs-css').attr('href','/authority/css/bootstrap-'+theme_name+'.css');
+		$('#bs-css').attr('href','/febsauthweb/static/css/bootstrap-'+theme_name+'.css');
 	}
 	
 	//ajax menu checkbox
