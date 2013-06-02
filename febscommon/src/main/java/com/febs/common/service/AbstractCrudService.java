@@ -28,7 +28,7 @@ public abstract class AbstractCrudService<T, PK extends Serializable> {
 	 * 逻辑删除，常用
 	 * @param instance
 	 */
-	public void delete(T instance) {
+	public void delete(String id) {
 		throw new UnsupportedOperationException();
 	}
 

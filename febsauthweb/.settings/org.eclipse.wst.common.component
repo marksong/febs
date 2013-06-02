@@ -11,6 +11,9 @@
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/resource/febscommon/febscommon">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.hibernate/hibernate-validator/5.0.1.Final/jar/542a45c94ff8a7551779caaaffd3857d643b9087/hibernate-validator-5.0.1.Final.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework/spring-web/3.2.2.RELEASE/jar/ebde82aa745966f34a8ae1273e363f0a2366eb33/spring-web-3.2.2.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
@@ -59,10 +62,10 @@
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework/spring-core/3.2.2.RELEASE/jar/302bd922c30a4d4bfb15b76a5939117b425eb480/spring-core-3.2.2.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.jboss.logging/jboss-logging/3.1.0.GA/jar/c71f2856e7b60efe485db39b37a31811e6c84365/jboss-logging-3.1.0.GA.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework/spring-context/3.2.2.RELEASE/jar/a5bdbcd5fa58680b6fe1f0143f370003747584db/spring-context-3.2.2.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework/spring-context/3.2.2.RELEASE/jar/a5bdbcd5fa58680b6fe1f0143f370003747584db/spring-context-3.2.2.RELEASE.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.jboss.logging/jboss-logging/3.1.1.GA/jar/7fb1a7eb7ff1d15cac1802510fee65c7ca31a869/jboss-logging-3.1.1.GA.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final/jar/3306a165afa81938fc3d8a0948e891de9f6b192b/hibernate-jpa-2.0-api-1.0.1.Final.jar">
@@ -101,7 +104,13 @@
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework/spring-jdbc/3.2.2.RELEASE/jar/6e76b68ea33194c9b92f3be926cc43945db2977f/spring-jdbc-3.2.2.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/com.fasterxml/classmate/0.8.0/bundle/27426d4fca7adcda34f536e32d6189566a2929f0/classmate-0.8.0.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.hibernate.common/hibernate-commons-annotations/4.0.1.Final/jar/78bcf608d997d0529be2f4f781fdc89e801c9e88/hibernate-commons-annotations-4.0.1.Final.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/javax.validation/validation-api/1.1.0.Final/jar/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.slf4j/slf4j-api/1.7.5/jar/6b262da268f8ad9eff941b25503a9198f0a0ac93/slf4j-api-1.7.5.jar">

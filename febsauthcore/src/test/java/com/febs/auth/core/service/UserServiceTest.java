@@ -17,6 +17,9 @@ public class UserServiceTest {
 	
 	@Test
 	public void test() {
+		for (int i = 0; i < 1000; i++) {
+			testAttachDirty();
+		}
 	}
 	
 	@Test
