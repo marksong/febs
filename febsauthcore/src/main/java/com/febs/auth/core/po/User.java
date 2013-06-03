@@ -3,6 +3,8 @@ package com.febs.auth.core.po;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 import com.febs.common.orm.hibernate.AuditEntity;
 
 @Entity(name="auth_user")
@@ -30,6 +32,7 @@ public class User extends AuditEntity {
 		this.nickName = nickName;
 	}
 
+	@NotBlank
 	public String getUsername() {
 		return username;
 	}
@@ -38,6 +41,7 @@ public class User extends AuditEntity {
 		this.username = username;
 	}
 
+	@NotBlank
 	public String getPassword() {
 		return password;
 	}

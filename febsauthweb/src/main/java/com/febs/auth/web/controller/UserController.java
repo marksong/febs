@@ -23,7 +23,7 @@ public class UserController extends AbstractController<User> {
 
 	@Override
 	public String modelName() {
-		return "user";
+		return "auth/user";
 	}
 
 	@Override

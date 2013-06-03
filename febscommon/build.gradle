@@ -3,5 +3,5 @@ apply plugin: 'java'
 group = 'febscommon'
 
 dependencies {
-	compile coreDependencies, webDependencies
+	compile coreDependencies, webDependencies, testCompileDependencies
 }

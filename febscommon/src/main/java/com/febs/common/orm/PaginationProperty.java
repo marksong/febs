@@ -6,7 +6,7 @@ package com.febs.common.orm;
  *
  */
 public class PaginationProperty {
-	public static final String PAGE = "pagination";
+	public static final String PAGE = "page";
 	public static final String PAGE_SIZE = "pageSize";
 	public static final String PAGE_NO = "pageNo";
 	public static final String ORDER = "order";

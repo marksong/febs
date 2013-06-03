@@ -240,7 +240,7 @@
 	<!-- history.js for cross-browser state change on ajax -->
 	<script src="${js}/jquery.history.js"></script>
 	<!-- application script for Charisma demo -->
-	<!-- <script src="${js}/charisma.js"></script> -->
+	<script src="${js}/charisma.js"></script>
 	
 		
 </body>

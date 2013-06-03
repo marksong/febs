@@ -13,3 +13,6 @@
 /febscommon/build
 /febscommon/bin
 /.gradle
+/febsauthcore/bin
+
+/.gradle
