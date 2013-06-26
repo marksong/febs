@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <decorators defaultdir="/WEB-INF/sitemesh/">
+	<excludes>
+		<pattern>/index*</pattern>
+		<pattern>/login*</pattern>
+		<pattern>/logout*</pattern>
+	</excludes>
 	<decorator name="auth" page="/WEB-INF/decorators/default.jsp">
 		<pattern>/*</pattern>
 	</decorator>

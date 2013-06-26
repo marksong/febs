@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:sec="http://www.springframework.org/schema/security" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+
+	<sec:http auto-config="true">
+
+		<sec:intercept-url pattern="/index" access="ROLE_USER" />
+		<sec:intercept-url pattern="/auth/user*" access="ROLE_ADMIN" />
+		<sec:intercept-url pattern="/login*" requires-channel="https" />
+		<sec:form-login login-page="/login" default-target-url="/index"
+			authentication-failure-url="/login?error=true" />
+		<sec:logout logout-success-url="/index" />
+	</sec:http>
+
+	<sec:authentication-manager>
+		<sec:authentication-provider>
+			<!-- 密码加密方式. 常用的有md5 和 sha. <password-encoder hash="md5"> <salt-source 
+				user-property="username"/> </password-encoder> -->
+			<!-- 注入dataSource验证数据库中的用户名.密码.账号状态.和权限相关; -->
+			<sec:jdbc-user-service data-source-ref="dataSource"
+				users-by-username-query="select 
+				username,password,1 from auth_user where username = ? and delete_flag = 0"
+				authorities-by-username-query="select 
+				u.username,r.role_name from auth_user u join auth_user_role ur on u.id = ur.user_id join auth_role 
+				r on r.id = ur.role_id where u.username = ?" />
+			<!-- 使用固定的用户名和密码及权限来做验证. -->
+			<!--<sec:user-service> <sec:user name="admin" password="admin" authorities="ROLE_USER, 
+				ROLE_ADMIN" /> <sec:user name="user" password="user" authorities="ROLE_USER" 
+				/> </sec:user-service> -->
+		</sec:authentication-provider>
+	</sec:authentication-manager>
+
+</beans>

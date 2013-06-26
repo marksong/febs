@@ -104,6 +104,16 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework.security/spring-security-config/3.1.4.RELEASE/source/ccbdeed20bf2a9ac89b11603217733a167310b64/spring-security-config-3.1.4.RELEASE-sources.jar" kind="lib" path="C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework.security/spring-security-config/3.1.4.RELEASE/jar/196e312b9c05118c814de71eafa9c603bef3617b/spring-security-config-3.1.4.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework.security/spring-security-taglibs/3.1.4.RELEASE/source/9d6af9e90077b662eab68ed8e865d0189dc0f7b0/spring-security-taglibs-3.1.4.RELEASE-sources.jar" kind="lib" path="C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework.security/spring-security-taglibs/3.1.4.RELEASE/jar/38a741ecaf4c698624e3a7f2c636755e6deeff1f/spring-security-taglibs-3.1.4.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="C:/Users/Mark/.gradle/caches/artifacts-24/filestore/junit/junit/4.11/source/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar" kind="lib" path="C:/Users/Mark/.gradle/caches/artifacts-24/filestore/junit/junit/4.11/jar/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar" exported="true">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
@@ -210,6 +220,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry sourcepath="C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework/spring-web/3.2.2.RELEASE/source/6e2d60cc0f4daf8dea77391c55d9a51c8ecce51/spring-web-3.2.2.RELEASE-sources.jar" kind="lib" path="C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework/spring-web/3.2.2.RELEASE/jar/ebde82aa745966f34a8ae1273e363f0a2366eb33/spring-web-3.2.2.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework.security/spring-security-acl/3.1.4.RELEASE/source/ea1e100509348736445d0de098342824c6b6ba65/spring-security-acl-3.1.4.RELEASE-sources.jar" kind="lib" path="C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework.security/spring-security-acl/3.1.4.RELEASE/jar/bf39103d297ec55b60e868b77c83377f44e661df/spring-security-acl-3.1.4.RELEASE.jar" exported="true">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>

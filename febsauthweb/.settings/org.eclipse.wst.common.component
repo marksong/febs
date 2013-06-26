@@ -47,6 +47,9 @@
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework/spring-webmvc/3.2.2.RELEASE/jar/dd962b49d731a69c4ca0c4ec67b71076742657cc/spring-webmvc-3.2.2.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework.security/spring-security-taglibs/3.1.4.RELEASE/jar/38a741ecaf4c698624e3a7f2c636755e6deeff1f/spring-security-taglibs-3.1.4.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework/spring-beans/3.2.2.RELEASE/jar/bbe3f76d14e9471e339bd8afec07b6fc5c916cd4/spring-beans-3.2.2.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
@@ -83,6 +86,9 @@
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/commons-beanutils/commons-beanutils/1.8.3/jar/686ef3410bcf4ab8ce7fd0b899e832aaba5facf7/commons-beanutils-1.8.3.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework.security/spring-security-config/3.1.4.RELEASE/jar/196e312b9c05118c814de71eafa9c603bef3617b/spring-security-config-3.1.4.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/aopalliance/aopalliance/1.0/jar/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
@@ -93,6 +99,9 @@
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework/spring-tx/3.2.2.RELEASE/jar/b709255ee5ffea25b3882167e49a3dcb99cc582c/spring-tx-3.2.2.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.springframework.security/spring-security-acl/3.1.4.RELEASE/jar/bf39103d297ec55b60e868b77c83377f44e661df/spring-security-acl-3.1.4.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Mark/.gradle/caches/artifacts-24/filestore/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jar/18f0e1d42f010a8b53aa447bf274a706d5148852/jboss-transaction-api_1.1_spec-1.0.1.Final.jar">
