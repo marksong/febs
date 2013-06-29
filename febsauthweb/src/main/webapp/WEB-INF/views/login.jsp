@@ -34,5 +34,6 @@
 			</tr>
 		</table>
 	</form>
+	<security:authentication property="name" />
 </body>
 </html>

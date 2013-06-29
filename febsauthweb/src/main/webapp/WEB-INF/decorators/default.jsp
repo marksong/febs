@@ -4,10 +4,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <c:set var="ctx" value="${pageContext.request.contextPath}" />
-<c:set var="static" value="${ctx}/static" />
-<c:set var="css" value="${static}/css" />
-<c:set var="img" value="${static}/img" />
-<c:set var="js" value="${static}/js" />
+<c:set var="st" value="${ctx}/static" />
+<c:set var="css" value="${st}/css" />
+<c:set var="img" value="${st}/img" />
+<c:set var="js" value="${st}/js" />
 <!DOCTYPE html>
 <html lang="en">
 <head>

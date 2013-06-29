@@ -35,7 +35,8 @@ ext.webDependencies = ['org.springframework:spring-webmvc:3.2.2.RELEASE',
 ext.testCompileDependencies = ['junit:junit:4.+', 
 					'org.springframework:spring-test:3.2.2.RELEASE',
 					'org.apache.tomcat:jsp-api:6.0.37',
-					'org.apache.tomcat:servlet-api:6.0.37']
+					'org.apache.tomcat:servlet-api:6.0.37',
+					'org.eclipse.jetty:jetty-server:9.0.3.v20130506']
 
 project(':febsauthweb') {
 	apply plugin: 'eclipse-wtp'

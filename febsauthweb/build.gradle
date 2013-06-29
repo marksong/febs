@@ -10,5 +10,14 @@ dependencies {
 }
 
 jettyRun {
-  jettyConfig = file('src/test/resources/jetty-ssl.xml')
+	enableSSL = true
+}
+
+task deploy(dependsOn: war) << {
+	
+	copy {
+		from 'build/libs'
+		into 'E:/tomcat7/webapps'
+	}
+	delete ('E:/tomcat7/webapps/febsauthweb')
 }
